@@ -1,0 +1,291 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./b.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.05); /* Slight upscale to make it look sharper */
+    z-index: -1;
+}
+
+
+
+header, #content {
+    background-color: rgba(0, 0, 0, 0.6); /* Adds a semi-transparent background */
+    padding: 15px;
+    color: #f8f8f8;
+    text-align: center;
+    width : 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+}
+
+header nav button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header nav button:hover {
+    background-color: gray;
+}
+
+#content {
+    padding: 40px;
+    text-align: center;
+}
+/* Menu container styles */
+.menu {
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background for the menu section */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    margin: 20px; /* Add some spacing around the menu */
+}
+
+/* Individual menu item styles */
+.menu-item {
+    margin-bottom: 20px; /* Space between menu items */
+    padding: 15px; /* Padding for each item */
+    background-color: #2a2a2a; /* Slightly lighter dark background */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #7E2A3D; /* Dark Red border for menu items */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Menu item hover effect */
+.menu-item:hover {
+    background-color: rgba(255, 215, 0, 0.1); /* Light gold background on hover */
+    transform: scale(1.02); /* Slightly enlarge the item on hover */
+}
+
+/* Menu item title styles */
+.menu-item h3 {
+    margin: 0;
+    color: #FFD700; /* Gold color for item names */
+    font-size: 24px; /* Font size for item names */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Menu item description styles */
+.menu-item p {
+    margin: 5px 0; /* Spacing above and below descriptions */
+    color: #F5F5F5; /* Light color for text descriptions */
+    font-size: 16px; /* Font size for descriptions */
+}
+
+/* Price styles */
+.price {
+    font-weight: bold; /* Bold price text */
+    color: #9B1B30; /* Wine Red color for prices */
+    font-size: 18px; /* Font size for prices */
+}
+
+/* Responsive styles for the menu */
+@media (max-width: 600px) {
+    .menu {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .menu-item {
+        padding: 10px; /* Reduce padding for menu items */
+    }
+
+    .menu-item h3 {
+        font-size: 20px; /* Smaller font size for item names */
+    }
+
+    .menu-item p {
+        font-size: 14px; /* Smaller font size for descriptions */
+    }
+}
+ /* Home section styles */
+.home-section {
+  
+    display: flex; /* Use flex to center content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    color: white; /* Ensure text is readable */
+    padding: 120px 20px 20px; /* Adjust top padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.home-section h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 3em; /* Adjust font size for prominence */
+    margin-top: 20px; /* Space from the top of the section */
+    text-align: center; /* Center the heading */
+    color: gold; /* Change color to fit the color palette */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better visibility */
+}
+
+.home-section p {
+    margin-top: 20px; /* Add space between heading and paragraph */
+    font-size: 1.2em; /* Adjust font size for better readability */
+    max-width: 600px; /* Set a maximum width for the paragraph */
+    line-height: 1.5; /* Increase line height for readability */
+    text-align: center; /* Center the heading */
+    color: gold; /* Change color to fit the color palette */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better visibility */
+}
+
+/* Button styles */
+.home-section button {
+    margin-top: 20px; /* Add space above the buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    background-color: rgba(255, 0, 0, 0.8); /* Example button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.home-section button:hover {
+    background-color: rgba(255, 0, 0, 1); /* Darker color on hover */
+}
+.contact-section {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    color: white; /* Text color */
+    padding: 40px 20px; /* Add padding for spacing */
+    text-align: center; /* Center text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+    justify-content: center; /* Center content */
+}
+
+.contact-heading {
+    font-size: 3em; /* Large font size */
+    margin: 20px 0; /* Space around heading */
+    color: gold; /* Gold color for the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for visibility */
+}
+
+/* Style the form */
+form {
+    display: flex; /* Use flexbox for form elements */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit the max width */
+    margin-top: 20px; /* Space above the form */
+}
+
+/* Style form inputs and button */
+input, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid gold; /* Gold border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #222; /* Dark background for inputs */
+    color: white; /* Text color */
+}
+
+button {
+    padding: 10px 20px; /* Button padding */
+    background-color: gold; /* Gold background for button */
+    border: none; /* Remove border */
+    color: black; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #e5b36d; /* Lighter gold on hover */
+}
+
+#reservationDetails {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.1em;
+}
+/* Style for the confirmation message */
+.message-div {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* login.css */
+
+/* Apply some basic styling to the body */
+
+/* Style the login form container */
+#loginForm {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px; /* Limit form width for better responsiveness */
+    text-align: center; /* Center text inside the form */
+}
+
+/* Header of the login form */
+h2 {
+    color: crimson; /* Crimson color for the header */
+    margin-bottom: 20px;
+}
+
+/* Style the input fields for username and password */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: gold; /* Gold color for the submit button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkgoldenrod; /* Change to darker gold on hover */
+}
+
+/* Input fields and button focus */
+input[type="text"]:focus, input[type="password"]:focus {
+    outline-color: crimson; /* Crimson color when focused */
+}
+
