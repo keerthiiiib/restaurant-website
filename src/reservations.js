@@ -1,4 +1,3 @@
-// reservations.js
 export function setupReservationButton() {
     const reserveButton = document.getElementById("reserveBtn");
     reserveButton.addEventListener("click", async () => {

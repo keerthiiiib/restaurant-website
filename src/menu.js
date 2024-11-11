@@ -1,5 +1,3 @@
-// menu.js
-
 function loadMenu() {
     // Create a main container for the menu content
     const menuContainer = document.createElement("div");
