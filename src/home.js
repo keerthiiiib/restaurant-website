@@ -2,7 +2,6 @@ export default function loadHome() {
     const content = document.getElementById('content');
     content.innerHTML = ''; // Clear previous content
 
-    // Create a div for the home section with a background image
     const homeSection = document.createElement('div');
     homeSection.classList.add('home-section');
 
@@ -14,7 +13,6 @@ export default function loadHome() {
     paragraph.textContent = 'Experience authentic flavors and a warm atmosphere.';
     paragraph.classList.add('home-paragraph');
 
-    // Create input fields for reservation details
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
     nameInput.placeholder = 'Enter Your Name';
